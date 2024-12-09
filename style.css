@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans', sans-serif
+}
+
+html,
+body {
+    height: 100%
+}
+
+body {
+    display: grid;
+    place-items: center;
+    background: #454545;
+}
+
+.card {
+	color:#F3E8FF;
+    width: 350px;
+    border-radius: 10px;
+   background: linear-gradient(145deg, #454545, #454545);
+box-shadow:  20px 20px 60px #454545, 
+             -20px -20px 60px #454545;
+    border: none
+}
+
+.neo-button {
+    width: 40px;
+    height: 40px;
+    outline: 0 !important;
+    cursor: pointer;
+    color: #454545;
+    font-size: 15px;
+    border: none;
+    margin-right: 10px;
+    border-radius: 50%;
+background: linear-gradient(145deg, #454545, #454545);
+box-shadow: inset 20px 20px 60px #F3E8FF, 
+             inset -20px -20px 60px #F3E8FF;
+}
+
+.num{
+	
+	color:#eee !important;
+}
+
+.line{
+	color:#fff !important;
+}
+
+.neo-button:active {
+   border-radius: 50%;
+/* background: #454545;
+box-shadow:  28px 28px 57px #F3E8FF, 
+             -28px -28px 57px #F3E8FF; */
+}
+
+/* .fa-facebook {
+    color: #454545 !important;
+}
+
+.fa-linkedin {
+    color: #454545
+}
+
+.fa-google {
+    color: #454545
+}
+
+.fa-youtube {
+    color: #454545
+}
+
+.fa-twitter {
+    color: #454545
+} */
+
+.profile_button{
+	color:#454545;
+	padding:10px; 
+   border:none;
+   outline:0 !important;
+border-radius: 50px;
+background: #F3E8FF;
+box-shadow:  28px 28px 57px #454545, 
+             -28px -28px 57px #454545;
+	
+}
