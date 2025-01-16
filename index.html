@@ -68,13 +68,18 @@
 
     <!-- Visitor Counter Script -->
     <script>
-        var xhr = new XMLHttpRequest();
-        xhr.open("GET", "https://api.countapi.xyz/hit/biyarhussein.github.io/visitors");
-        xhr.responseType = "json";
-        xhr.onload = function() {
-            document.getElementById('visitor-count').innerText = this.response.value;
-        };
-        xhr.send();
+        function cb(response) {
+            // Update the visitor count on the page
+            document.getElementById('visitor-count').innerText = response.value;
+        }
+
+        // Fetch and increment the visit count using the callback function
+        (function() {
+            var script = document.createElement('script');
+            script.src = "https://api.countapi.xyz/hit/biyarhussein.github.io/visits?callback=cb";
+            script.async = true;
+            document.body.appendChild(script);
+        })();
     </script>
 
 </body>
