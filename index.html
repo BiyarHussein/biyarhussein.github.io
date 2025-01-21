@@ -21,7 +21,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </head>
 <body>
-    
     <div class="container d-flex justify-content-center">
         <div class="card p-3 py-4">
             <div class="text-center"> 
@@ -54,32 +53,12 @@
                     <button class="neo-button"><i class="bi bi-github"></i></button>
                 </a>
                 <div class="profile mt-5">
-                    <!-- View Profile Button -->
-                    <a href="https://www.facebook.com/share/19eWPbYcQ4/" target="_blank"> 
-                        <button class="profile_button">View Profile</button>
-                    </a>
-                    <!-- Eye Icon and Visitor Count -->
-                    <div class="visitor-info">
-                        <i class="bi bi-eye"></i> 
-                        <span id="visitor-count">0</span>
-                    </div>
+                    <!-- Profile Views Section -->
+                    <h4>👁️ Profile Views</h4>
+                    <img src="https://profile-counter.glitch.me/biyarhussein/count.svg" alt="Profile Views Counter" />
                 </div>
             </div>
         </div>
     </div>
-
-    <!-- Google Tag Manager -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-RFYYZR3VX2"></script>
-    <script>
-    // Initialize visitor count
-    let visitorCount = localStorage.getItem('visitorCount') || 0;
-    visitorCount = parseInt(visitorCount) + 1; // Increment the count by 1
-
-    // Store the updated visitor count in localStorage
-    localStorage.setItem('visitorCount', visitorCount);
-
-    // Display the visitor count on the page
-    document.getElementById('visitor-count').textContent =  + visitorCount;
-</script>
 </body>
 </html>
